@@ -20,7 +20,7 @@ public class Main {
 
         empresa.mostrarSalario();
 
-        System.out.println("El empleado con más clientes es "+empresa.empleadoConMasClientes().getNombre()+" "+empresa.empleadoConMasClientes().getApellido());
+        System.out.println("El empleado con más clientes es"+empresa.empleadoConMasClientes().getNombre()+" "+empresa.empleadoConMasClientes().getApellido());
 
 //        empleado1.mostrarSalario();
 //        empleado2.mostrarSalario();

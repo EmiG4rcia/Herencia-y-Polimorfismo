@@ -34,6 +34,28 @@ public class Empresa {
         this.empleados = empleados;
     }
 
+    public void mostrarSalario() {
+            for (Empleado e: empleados){
+                System.out.println("El empleado "+e.getNombre() + "tiene un salario de $" + e.montoACobrar());
+            }
+        //return "El salario del empleado"+ this.getNombre() + " es: $" + montoACobrar();
+    }
+
+    public Empleado empleadoConMasClientes() {
+        int max = 0;
+        Empleado empleadoConMasClientes = null;
+        for (Empleado e: empleados) {
+            if(e instanceof EmpleadoConComision) {
+                EmpleadoConComision ecc = (EmpleadoConComision) e;
+                int cant= ecc.getClientes_captados();
+                if (cant > max) {
+                    max = cant;
+                    empleadoConMasClientes = ecc;
+                }
+            }
+        }
+        return empleadoConMasClientes;
+    }
 
 
 }

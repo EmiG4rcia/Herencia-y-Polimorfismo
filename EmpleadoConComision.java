@@ -12,6 +12,30 @@ public class EmpleadoConComision extends Empleado{
         this.montoPorCliente = montoPorCliente;
     }
 
+    public double getSalario_minimo() {
+        return salario_minimo;
+    }
+
+    public void setSalario_minimo(double salario_minimo) {
+        this.salario_minimo = salario_minimo;
+    }
+
+    public int getClientes_captados() {
+        return clientes_captados;
+    }
+
+    public void setClientes_captados(int clientes_captados) {
+        this.clientes_captados = clientes_captados;
+    }
+
+    public double getMontoPorCliente() {
+        return montoPorCliente;
+    }
+
+    public void setMontoPorCliente(double montoPorCliente) {
+        this.montoPorCliente = montoPorCliente;
+    }
+
     @Override
     public double montoACobrar() {
         if(clientes_captados*montoPorCliente < salario_minimo){ return salario_minimo;

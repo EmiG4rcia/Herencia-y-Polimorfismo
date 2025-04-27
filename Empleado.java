@@ -47,7 +47,5 @@ public abstract class Empleado {
 
     public abstract double montoACobrar();
 
-    public String mostrarSalario() {
-        return "El salario del empleado"+ this.getNombre() + " es: $" + montoACobrar();
-    }
+
 }
